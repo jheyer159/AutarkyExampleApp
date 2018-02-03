@@ -9,6 +9,8 @@ import {
 import Form from '../components/ReduxForm'
 import { SocialIcon } from 'react-native-elements'
 
+import colors from "../constants/colors"
+
 export default class LoginScreen extends React.Component {
   static navigationOptions = {
     header: null,
@@ -29,7 +31,7 @@ export default class LoginScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#3e9b54',
+    backgroundColor: colors.login,
     alignItems: "center",
     justifyContent: "center"
   },

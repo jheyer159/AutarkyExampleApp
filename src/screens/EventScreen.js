@@ -17,11 +17,17 @@ import { Button, List, ListItem, Card } from 'react-native-elements';
 import LogoutButton from "../components/LogoutButton"
 import HeaderNav from '../components/MyHeader';
 
-
+import FA from 'react-native-vector-icons/FontAwesome';
 
 export default class ScheduleScreen extends React.Component {
   static navigationOptions = {
-    title: 'Schedule',
+    title: 'Event',
+    tabBarIcon: ({tintColor}) => (
+      <FA 
+        name="plus"
+        style={[styles.navIcons, {color: tintColor}]}
+      />
+    )
   };
 
 
@@ -29,6 +35,7 @@ export default class ScheduleScreen extends React.Component {
     return (
         <ScrollView style={styles.container}>
           <LogoutButton />
+          <Text> Leaving logout button for example </Text>
         </ScrollView>
     );
   }
@@ -63,5 +70,8 @@ const styles = StyleSheet.create({
   },
   description: {
     fontSize: 16.
+  },
+  navIcons: {
+    fontSize: 24,
   }
 });

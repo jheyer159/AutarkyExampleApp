@@ -2,10 +2,12 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image} from 'react-native';
 import { StackNavigator, DrawerNavigator, TabNavigator } from "react-navigation";
 
-import HomeScreen from "../screens/HomeScreen";
-import SettingsScreen from "../screens/SettingsScreen";
-import ScheduleScreen from "../screens/ScheduleScreen";
+import AttScreen from "../screens/AttScreen";
+import ShareScreen from "../screens/ShareScreen";
+import EventScreen from "../screens/EventScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import EventsScreen from "../screens/EventsScreen";
+import SubmitScreen from "../screens/SubmitScreen";
 
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -13,18 +15,20 @@ import Icon from 'react-native-vector-icons/Ionicons';
 
 
 const HomeTabs = TabNavigator({
-  Home: { screen: HomeScreen },
-  Schedule: { screen: ScheduleScreen },
-  Settings: { screen: SettingsScreen }
+  Events: { screen: EventsScreen },
+  Attendees: { screen: AttScreen },
+  Event: { screen: EventScreen },
+  Share: { screen: ShareScreen },
+  Submit: { screen: SubmitScreen },
 },
 
 
 {
   tabBarOptions : {
-    inactiveTintColor: '#ffffff',
-    activeTintColor: 'lightgrey',
+    inactiveTintColor: 'black',
+    activeTintColor: "#417D80",
     style: {
-      backgroundColor: '#3e9b54',
+      backgroundColor: "#9EB4C0",
     }
   }
 })
@@ -41,9 +45,9 @@ const DrawerNavigation = StackNavigator({
 }, {
   headerMode: 'float',
   navigationOptions: ({navigation}) => ({
-    headerStyle: {backgroundColor: 'white'},
-    title: 'Leaf',
-    headerTintColor: '#3e9b54',
+    headerStyle: {backgroundColor: "#4D658D"},
+    title: 'Sign Up Sheet',
+    headerTintColor: 'white',
     headerLeft: <Icon style={styles.icon} name="ios-list" onPress={() => 
       navigation.navigate('DrawerToggle')}/>
   })

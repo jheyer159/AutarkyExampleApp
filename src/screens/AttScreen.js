@@ -15,15 +15,17 @@ import {
 import { Button, List, ListItem, Card, } from 'react-native-elements';
 import Chart from '../components/ChartTest';
 import { Measurement, MeasurementContainer } from '../components/Measurements';
+import SettingsList from "../components/Settings";
+import AttCount from "../components/AttCount";
 
 import FA from 'react-native-vector-icons/FontAwesome';
 
-export default class HomeScreen extends React.Component {
+export default class AttScreen extends React.Component {
   static navigationOptions = {
-    drawerLabel: 'Home',
+    drawerLabel: 'Att',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="home"
+        name="users"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
@@ -33,7 +35,8 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
         <ScrollView style={styles.container}>
-          <MeasurementContainer />
+          <AttCount />
+          <SettingsList />
         </ScrollView>
     );
   }
@@ -43,7 +46,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'white',
-    paddingVertical: 30,
   },
   navIcons: {
     fontSize: 24

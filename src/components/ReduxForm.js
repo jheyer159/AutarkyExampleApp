@@ -45,15 +45,6 @@ const Form = props => {
       backgroundColor={"#fff"}
       color={"#000"}
       />
-      <Button style={styles.ButtonStyle}
-      //onPress={props.handleRegister} - We need to make this open a new screen
-      title="REGISTER"
-      containerViewStyle={{ borderRadius: 10, margin: 5}}
-      borderRadius={10}
-      raised={true}
-      backgroundColor={"#fff"}
-      color={"#000"}
-      />
       <Text style={styles.ForgotPw}>Forgot Password?</Text>
   </View>
   );

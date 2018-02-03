@@ -12,16 +12,44 @@ import { List, ListItem } from 'react-native-elements'
 
 const list = [
   {
-    title: 'Logout',
-    icon: 'lock-outline',
+    title: 'Bob',
+    icon: 'check-circle',
   },
   {
-    title: 'Calibrate',
-    icon: 'local-drink'
+    title: 'Trey',
+    icon: 'do-not-disturb-on',
   },
   {
-    title: 'Updates',
-    icon: 'sync'
+    title: 'Jeremy',
+    icon: 'check-circle'
+  },
+  {
+    title: 'Graeme',
+    icon: 'do-not-disturb-on'
+  },
+  {
+    title: 'Sydney',
+    icon: 'do-not-disturb-on'
+  },
+  {
+    title: 'Sean',
+    icon: 'do-not-disturb-on'
+  },
+  {
+    title: 'Maleah',
+    icon: 'check-circle'
+  },
+  {
+    title: 'Nick',
+    icon: 'check-circle'
+  },
+  {
+    title: 'Fred',
+    icon: 'check-circle'
+},
+{
+    title: 'Paul',
+    icon: 'check-circle'
 },
 ];
 

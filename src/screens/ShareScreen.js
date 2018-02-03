@@ -18,18 +18,25 @@ import LogoutButton from "../components/LogoutButton";
 import SettingsList from "../components/Settings";
 import HeaderNav from '../components/MyHeader';
 
+import FA from 'react-native-vector-icons/FontAwesome';
 
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
-    title: null,
+    title: 'Share',
+    tabBarIcon: ({tintColor}) => (
+      <FA 
+        name="download"
+        style={[styles.navIcons, {color: tintColor}]}
+      />
+    )
   };
 
 
   render() {
     return (
         <ScrollView style={styles.container}>
-            <SettingsList />
+            <Text> Share Screen </Text>
         </ScrollView>
     );
   }
@@ -44,4 +51,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     paddingVertical: 30,
   },
+  navIcons: {
+    fontSize: 24,
+  }
 });
