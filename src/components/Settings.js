@@ -62,8 +62,9 @@ class SettingsList extends React.Component {
                         <ListItem
                             key={i}
                             title={item.title}
-                            leftIcon={{name: item.icon}}
-                        />
+                            leftIcon={{name: item.icon, 
+                            color: `${item.icon === "check-circle" ? "green" : "red"}`}}               
+                            />
                         ))
                     }
                 </List>

@@ -20,7 +20,7 @@ import FA from 'react-native-vector-icons/FontAwesome';
 
 export default class EventsScreen extends React.Component {
   static navigationOptions = {
-    drawerLabel: 'Event',
+    title: 'Events',
     tabBarIcon: ({tintColor}) => (
       <FA 
         name="ticket"

@@ -5,7 +5,9 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import LoginScreen from '../screens/LoginScreen';
-import MainNavigator from './MainNavigator';
+import MainNavigator, { HomeTabs } from './MainNavigator';
+
+
 //import SettingsScreen from "../screens/SettingsScreen";
 //import EventsScreen from "../screens/EventsScreen";
 
@@ -15,6 +17,7 @@ export const AppNavigator = StackNavigator({
 }, {
   headerMode: 'none'
 });
+
 
 const AppWithNavigationState = ({ dispatch, nav }) => (
   <AppNavigator navigation={addNavigationHelpers({ dispatch, state: nav })} />

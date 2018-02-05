@@ -20,7 +20,7 @@ import FA from 'react-native-vector-icons/FontAwesome';
 
 export default class SubmitScreen extends React.Component {
   static navigationOptions = {
-    drawerLabel: 'Submit',
+    title: 'Submit',
     tabBarIcon: ({tintColor}) => (
       <FA 
         name="home"

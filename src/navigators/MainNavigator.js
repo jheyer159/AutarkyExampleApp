@@ -12,9 +12,11 @@ import SubmitScreen from "../screens/SubmitScreen";
 
 import Icon from 'react-native-vector-icons/Ionicons';
 
+import colors from '../constants/colors';
 
 
-const HomeTabs = TabNavigator({
+
+export const HomeTabs = TabNavigator({
   Events: { screen: EventsScreen },
   Attendees: { screen: AttScreen },
   Event: { screen: EventScreen },
@@ -45,11 +47,10 @@ const DrawerNavigation = StackNavigator({
 }, {
   headerMode: 'float',
   navigationOptions: ({navigation}) => ({
-    headerStyle: {backgroundColor: "#4D658D"},
-    title: 'Sign Up Sheet',
+    headerStyle: {backgroundColor: colors.topbar},
     headerTintColor: 'white',
-    headerLeft: <Icon style={styles.icon} name="ios-list" onPress={() => 
-      navigation.navigate('DrawerToggle')}/>
+    /*headerLeft: <Icon style={styles.icon} name="ios-list" onPress={() => 
+      navigation.navigate('DrawerToggle')}/> */
   })
 })
 

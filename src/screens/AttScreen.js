@@ -22,7 +22,7 @@ import FA from 'react-native-vector-icons/FontAwesome';
 
 export default class AttScreen extends React.Component {
   static navigationOptions = {
-    drawerLabel: 'Att',
+    title: 'Attendees',
     tabBarIcon: ({tintColor}) => (
       <FA 
         name="users"
