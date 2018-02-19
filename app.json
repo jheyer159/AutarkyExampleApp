@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "SignUpSheetDesign",
+    "name": "AutarkyExampleApp",
     "description": "No description",
-    "slug": "autarky-sssd",
-    "privacy": "public",
-    "sdkVersion": "22.0.0",
-    "version": "1.0.0",
+    "slug": "autarky-example",
+    "privacy": "unlisted",
+    "sdkVersion": "25.0.0",
+    "version": "0.0.1",
     "orientation": "portrait",
     "primaryColor": "#cccccc",
     "icon": "./assets/images/icon.png",
