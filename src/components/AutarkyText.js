@@ -20,6 +20,10 @@ class Autarky extends Component {
                 <Text></Text>
                 <Text></Text>
             <Text style={material.display1}>Example App</Text>
+                <Text></Text>
+                <Text></Text>
+                <Text></Text>
+            <Text style={material.subHeader}>Thanks for taking the time to look at our example app! If you have any questions please reach out to us at autarkysystems@gmail.com</Text>
         </View>
       );
     }

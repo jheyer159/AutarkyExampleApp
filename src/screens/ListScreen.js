@@ -19,6 +19,8 @@ import SettingsList from "../components/Settings";
 import AttCount from "../components/AttCount";
 
 import FA from 'react-native-vector-icons/FontAwesome';
+import TTList from '../components/TTList';
+import ListTwo from '../components/ListTwo';
 
 export default class ListScreen extends React.Component {
   static navigationOptions = {
@@ -36,6 +38,8 @@ export default class ListScreen extends React.Component {
     return (
         <ScrollView style={styles.container}>
           <SettingsList />
+          <TTList />
+          <ListTwo />
         </ScrollView>
     );
   }
