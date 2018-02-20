@@ -14,29 +14,25 @@ import {
 
 
 import { Button, List, ListItem, Card } from 'react-native-elements';
-import LogoutButton from "../components/LogoutButton"
-import HeaderNav from '../components/MyHeader';
+import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
+import CalendarsScreen from '../components/Calendar';
 
 import FA from 'react-native-vector-icons/FontAwesome';
 
-export default class ScheduleScreen extends React.Component {
+export default class CalendarScreen extends React.Component {
   static navigationOptions = {
-    title: 'Event',
+    title: 'Calendar',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="plus"
+        name="calendar"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
   };
 
-
   render() {
     return (
-        <ScrollView style={styles.container}>
-          <LogoutButton />
-          <Text> Leaving logout button for example </Text>
-        </ScrollView>
+        <CalendarsScreen />
     );
   }
 }

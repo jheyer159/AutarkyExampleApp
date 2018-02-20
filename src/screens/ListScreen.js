@@ -20,9 +20,9 @@ import AttCount from "../components/AttCount";
 
 import FA from 'react-native-vector-icons/FontAwesome';
 
-export default class AttScreen extends React.Component {
+export default class ListScreen extends React.Component {
   static navigationOptions = {
-    title: 'Attendees',
+    title: 'List',
     tabBarIcon: ({tintColor}) => (
       <FA 
         name="users"
@@ -35,7 +35,6 @@ export default class AttScreen extends React.Component {
   render() {
     return (
         <ScrollView style={styles.container}>
-          <AttCount />
           <SettingsList />
         </ScrollView>
     );

@@ -13,17 +13,16 @@ import {
 } from 'react-native';
 
 import { Button, List, ListItem, Card, } from 'react-native-elements';
-import Chart from '../components/ChartTest';
-import { Measurement, MeasurementContainer } from '../components/Measurements';
+import LogoutButton from "../components/LogoutButton";
 
 import FA from 'react-native-vector-icons/FontAwesome';
 
-export default class SubmitScreen extends React.Component {
+export default class SettingsScreen extends React.Component {
   static navigationOptions = {
-    title: 'Submit',
+    title: 'Settings',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="home"
+        name="cog"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
@@ -33,7 +32,7 @@ export default class SubmitScreen extends React.Component {
   render() {
     return (
         <ScrollView style={styles.container}>
-          <Text> Submit Screen </Text>
+          <LogoutButton />
         </ScrollView>
     );
   }

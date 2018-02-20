@@ -12,21 +12,23 @@ import {
   ListView,
 } from 'react-native';
 
-
-import { Button, List, ListItem, Card } from 'react-native-elements';
-import LogoutButton from "../components/LogoutButton";
-import SettingsList from "../components/Settings";
-import HeaderNav from '../components/MyHeader';
+import { Button, List, ListItem, Card, } from 'react-native-elements';
+import Chart from '../components/ChartTest';
+import { Measurement, MeasurementContainer } from '../components/Measurements';
+import Autarky from "../components/AutarkyText"
 
 import FA from 'react-native-vector-icons/FontAwesome';
 
+import AutarkyText from '../components/AutarkyText';
 
-export default class SettingsScreen extends React.Component {
+
+
+export default class HomeScreen extends React.Component {
   static navigationOptions = {
-    title: 'Share',
+    title: 'Home',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="download"
+        name="home"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
@@ -36,22 +38,19 @@ export default class SettingsScreen extends React.Component {
   render() {
     return (
         <ScrollView style={styles.container}>
-            <Text> Share Screen </Text>
+            <AutarkyText />
         </ScrollView>
     );
   }
 }
 
-
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     paddingVertical: 30,
   },
   navIcons: {
-    fontSize: 24,
+    fontSize: 24
   }
 });

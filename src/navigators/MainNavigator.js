@@ -2,12 +2,11 @@ import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image} from 'react-native';
 import { StackNavigator, DrawerNavigator, TabNavigator } from "react-navigation";
 
-import AttScreen from "../screens/AttScreen";
-import ShareScreen from "../screens/ShareScreen";
-import EventScreen from "../screens/EventScreen";
+import ListScreen from "../screens/ListScreen";
+import CalendarScreen from "../screens/CalendarScreen";
 import ProfileScreen from "../screens/ProfileScreen";
-import EventsScreen from "../screens/EventsScreen";
-import SubmitScreen from "../screens/SubmitScreen";
+import HomeScreen from "../screens/HomeScreen";
+import SettingsScreen from "../screens/SettingsScreen";
 
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -17,11 +16,10 @@ import colors from '../constants/colors';
 
 
 export const HomeTabs = TabNavigator({
-  Events: { screen: EventsScreen },
-  Attendees: { screen: AttScreen },
-  Event: { screen: EventScreen },
-  Share: { screen: ShareScreen },
-  Submit: { screen: SubmitScreen },
+  Home: { screen: HomeScreen },
+  List: { screen: ListScreen },
+  Calendar: { screen: CalendarScreen },
+  Settings: { screen: SettingsScreen },
 },
 
 

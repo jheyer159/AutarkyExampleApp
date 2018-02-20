@@ -8,9 +8,6 @@ import LoginScreen from '../screens/LoginScreen';
 import MainNavigator, { HomeTabs } from './MainNavigator';
 
 
-//import SettingsScreen from "../screens/SettingsScreen";
-//import EventsScreen from "../screens/EventsScreen";
-
 export const AppNavigator = StackNavigator({
   Login: { screen: LoginScreen },
   Main: { screen: MainNavigator },

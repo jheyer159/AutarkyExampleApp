@@ -14,7 +14,7 @@ let LogoutButton = ({dispatch}) => {
         <Button 
         large
         raised
-        title="Logout"
+        title="Logout (Return to Login)"
         onPress={() => dispatch(logout())}
         />
     );
