@@ -5,7 +5,7 @@ import {
   Platform,
   Text,
   Dimensions,
-  View, 
+  View,
 } from 'react-native';
 
 import { List, ListItem } from 'react-native-elements'
@@ -51,14 +51,18 @@ class TTList extends React.Component {
                 <List containerStyle={{marginBottom: 20}}>
                     {
                     list.map((l, i) => (
-                        <ListItem
-                            rightIcon={(<FA name="home"/>)}
-                            hideChevron="true"
-                            roundAvatar
-                            avatar={{uri:l.avatar_url}}
-                            key={i}
-                            title={l.name}
-                        />
+                        <View style={styles.container}>
+                            <ListItem
+                                //rightIcon={}
+                                hideChevron={true}
+                                roundAvatar
+                                avatar={{uri:l.avatar_url}}
+                                key={i}
+                                title={l.name}
+                                containerStyle={styles.listContainer}
+                            />
+                            <FA name="home" />   
+                         </View>
                     ))
                     }
                 </List>
@@ -68,3 +72,14 @@ class TTList extends React.Component {
 }
 
 export default TTList;
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        flexDirection: "row",
+        
+    },
+    listContainer: {
+        width: 200,
+    }
+  });

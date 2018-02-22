@@ -4,7 +4,8 @@ import {
   View,
   Image,
   Text,
-  Button
+  Button,
+  ScrollView
 } from 'react-native';
 
 //Redux
@@ -35,7 +36,7 @@ class Profile extends Component {
           Sean
         </Text>
       </Image>
-      {editButton}
+        {editButton}
       </View>
 
     )

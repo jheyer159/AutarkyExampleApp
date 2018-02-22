@@ -15,8 +15,7 @@ import {
 import { Button, List, ListItem, Card, } from 'react-native-elements';
 import Chart from '../components/ChartTest';
 import { Measurement, MeasurementContainer } from '../components/Measurements';
-import SettingsList from "../components/Settings";
-import AttCount from "../components/AttCount";
+import ListOne from "../components/ListOne";
 
 import FA from 'react-native-vector-icons/FontAwesome';
 import TTList from '../components/TTList';
@@ -24,10 +23,10 @@ import ListTwo from '../components/ListTwo';
 
 export default class ListScreen extends React.Component {
   static navigationOptions = {
-    title: 'List',
+    title: 'Lists',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="users"
+        name="list"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
@@ -37,9 +36,8 @@ export default class ListScreen extends React.Component {
   render() {
     return (
         <ScrollView style={styles.container}>
-          <SettingsList />
-          <TTList />
           <ListTwo />
+          <ListOne />
         </ScrollView>
     );
   }

@@ -12,19 +12,22 @@ import {
   ListView,
 } from 'react-native';
 
+//Component
+import Buttons from '../components/Buttons';
 
+//React Elements
 import { Button, List, ListItem, Card } from 'react-native-elements';
-import { Calendar, CalendarList, Agenda } from 'react-native-calendars';
-import CalendarsScreen from '../components/Calendar';
 
+//Icons
 import FA from 'react-native-vector-icons/FontAwesome';
 
-export default class CalendarScreen extends React.Component {
+
+export default class ButtonScreen extends React.Component {
   static navigationOptions = {
-    title: 'Calendars',
+    title: 'Buttons',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="calendar"
+        name="bold"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
@@ -32,7 +35,7 @@ export default class CalendarScreen extends React.Component {
 
   render() {
     return (
-        <CalendarsScreen />
+        <Buttons />
     );
   }
 }
@@ -43,7 +46,7 @@ export default class CalendarScreen extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'white',
     paddingVertical: 30,
   },
   header: {

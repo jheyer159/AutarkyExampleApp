@@ -53,7 +53,7 @@ const list = [
 },
 ];
 
-class SettingsList extends React.Component {
+class ListOne extends React.Component {
     render(){
         return(
             <View>
@@ -73,4 +73,4 @@ class SettingsList extends React.Component {
     }
 }
 
-export default SettingsList;
+export default ListOne;

@@ -7,6 +7,7 @@ import CalendarScreen from "../screens/CalendarScreen";
 import ProfileScreen from "../screens/ProfileScreen";
 import HomeScreen from "../screens/HomeScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import ButtonScreen from "../screens/ButtonScreen";
 
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -17,6 +18,7 @@ import colors from '../constants/colors';
 
 export const HomeTabs = TabNavigator({
   Home: { screen: HomeScreen },
+  Button: { screen: ButtonScreen },
   List: { screen: ListScreen },
   Calendar: { screen: CalendarScreen },
   Settings: { screen: SettingsScreen },
@@ -47,8 +49,8 @@ const DrawerNavigation = StackNavigator({
   navigationOptions: ({navigation}) => ({
     headerStyle: {backgroundColor: colors.topbar},
     headerTintColor: 'white',
-    /*headerLeft: <Icon style={styles.icon} name="ios-list" onPress={() => 
-      navigation.navigate('DrawerToggle')}/> */
+    headerLeft: <Icon style={styles.icon} name="ios-list" onPress={() => 
+      navigation.navigate('DrawerToggle')}/>
   })
 })
 

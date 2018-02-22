@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AutarkyExampleApp",
-    "description": "No description",
+    "description": "Welcome to Autarky Example App, this is an ongoing effort that we are constantly updating. If you have any questions please reach out to us at 'sean@autarkysystems.com'",
     "slug": "autarky-example",
     "privacy": "unlisted",
     "sdkVersion": "25.0.0",
