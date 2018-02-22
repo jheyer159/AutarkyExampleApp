@@ -17,7 +17,7 @@ class Buttons extends Component {
     render() {
       return (
         <ScrollView style={styles.container}>
-            <Text>Social Buttons</Text>
+            <Text style={styles.title}>Social Buttons</Text>
             <Text></Text>
             <SocialIcon
             title='Sign In With Facebook'
@@ -49,9 +49,13 @@ class Buttons extends Component {
             />
 
             <Text></Text>
+            <Text></Text>
+            <Text></Text>
 
-            <Text>Standard Square Buttons</Text>
+            <Text style={styles.title}>Standard Square Buttons</Text>
 
+            <Text></Text>
+            <Text></Text>
 
             <Button
             title='BUTTON'
@@ -116,6 +120,11 @@ class Buttons extends Component {
       marginBottom: 4,
       borderBottomWidth: StyleSheet.hairlineWidth,
       borderBottomColor: 'black',
+      textAlign: 'center',
+      paddingVertical: 10,
+      borderColor: '#bbb',
+      padding: 10,
+      backgroundColor: '#eee'
     },
     subTitle: {
       fontSize: 16,
