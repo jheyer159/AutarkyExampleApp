@@ -10,26 +10,22 @@ import {
   Alert,
   ActivityIndicator,
   ListView,
-  ImageBackground,
 } from 'react-native';
 
-import { Button, List, ListItem, Card, } from 'react-native-elements';
-import Chart from '../components/ChartTest';
 import { Measurement, MeasurementContainer } from '../components/Measurements';
-import Autarky from "../components/AutarkyText"
 
 import FA from 'react-native-vector-icons/FontAwesome';
 
-import AutarkyText from '../components/AutarkyText';
+import MyMapView from '../components/MyMapView';
 
 
 
-export default class HomeScreen extends React.Component {
+export default class MapScreen extends React.Component {
   static navigationOptions = {
-    title: 'Home',
+    title: 'Maps',
     tabBarIcon: ({tintColor}) => (
       <FA 
-        name="home"
+        name="map"
         style={[styles.navIcons, {color: tintColor}]}
       />
     )
@@ -38,10 +34,9 @@ export default class HomeScreen extends React.Component {
 
   render() {
     return (
-      <View>
-        <Image source={require('../img/autarky.png')}/>
-            <AutarkyText />
-      </View> 
+        <View style={styles.container}>
+            <MyMapView />
+        </View>
     );
   }
 }

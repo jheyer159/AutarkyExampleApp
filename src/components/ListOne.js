@@ -60,7 +60,7 @@ class ListOne extends React.Component {
                 <List>
                     {list.map((item, i) => (
                         <ListItem
-                            hideChevron="true"
+                            hideChevron={true}
                             key={i}
                             title={item.title}
                             leftIcon={{name: item.icon, 

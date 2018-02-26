@@ -5,13 +5,15 @@ import {
   Image,
   Text,
   Button,
-  ScrollView
+  ScrollView,
+  ImageBackground
 } from 'react-native';
 
 //Redux
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { editProfile, lockProfile } from '../redux/reducers/user.actions'; 
+import colors from "../constants/colors";
 
 import EN from 'react-native-vector-icons/Entypo';
 
@@ -20,6 +22,7 @@ class Profile extends Component {
   render() {
     //let user = this.props.user;
     const { profile, editProfile, lockProfile } = this.props
+
     var editButton
     if(profile == "locked") {
       editButton = <EN style={styles.icon} name="pencil" onPress={editProfile}/>
@@ -28,14 +31,14 @@ class Profile extends Component {
     }
     return (
       <View>
-      <Image source={require('../img/lights2.jpeg')}
+      <ImageBackground source={require('../img/lights2.jpeg')}
              style={styles.profileBackground}>
         <Image source={{uri: 'https://facebook.github.io/react-native/docs/assets/favicon.png'}}
                style={styles.avatar}/>
         <Text style={styles.nameText}>
           Sean
         </Text>
-      </Image>
+      </ImageBackground>
         {editButton}
       </View>
 
@@ -70,7 +73,7 @@ const styles = StyleSheet.create({
     alignSelf: 'center'
   },
   nameText: {
-    backgroundColor: "#3e9b54",
+    backgroundColor: colors.login,
     paddingLeft: 20,
     paddingVertical: 5,
     fontSize: 32,

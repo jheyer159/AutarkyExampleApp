@@ -8,6 +8,7 @@ import ProfileScreen from "../screens/ProfileScreen";
 import HomeScreen from "../screens/HomeScreen";
 import SettingsScreen from "../screens/SettingsScreen";
 import ButtonScreen from "../screens/ButtonScreen";
+import MapScreen from "../screens/MapScreen";
 
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -18,6 +19,7 @@ import colors from '../constants/colors';
 
 export const HomeTabs = TabNavigator({
   Home: { screen: HomeScreen },
+  Map: { screen: MapScreen },
   Button: { screen: ButtonScreen },
   List: { screen: ListScreen },
   Calendar: { screen: CalendarScreen },
