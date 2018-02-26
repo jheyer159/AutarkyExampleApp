@@ -13,46 +13,42 @@ import {
     Styles,
   } from 'react-native';
 
+
+
 class Buttons extends Component {
     render() {
       return (
         <ScrollView style={styles.container}>
             <Text style={styles.title}>Social Buttons</Text>
-            <Text></Text>
-            <SocialIcon
+            <SocialIcon style={styles.buttonSpacing}
             title='Sign In With Facebook'
             button
             type='facebook'
             />
 
-            <Text></Text>
-
-            <SocialIcon
-            title='Some Twitter Message'
+            <SocialIcon style={styles.buttonSpacing}
+            title='Twitter'
             button
             type='twitter'
             />
 
-            <Text></Text>
-
-            <SocialIcon
+            <SocialIcon style={styles.buttonSpacing}
             button
             type='medium'
             />
-
-            <Text></Text>
 
             <SocialIcon
             button
             light
             type='instagram'
+            title="Instagram"
             />
 
             <Text></Text>
             <Text></Text>
             <Text></Text>
 
-            <Text style={styles.title}>Standard Square Buttons</Text>
+            <Text style={styles.title}>Square Buttons</Text>
 
             <Text></Text>
             <Text></Text>
@@ -63,7 +59,6 @@ class Buttons extends Component {
             />
 
             <Text></Text>
-            <Text></Text>
 
             <Button
             raised
@@ -72,7 +67,6 @@ class Buttons extends Component {
             backgroundColor="green"
             />
 
-            <Text></Text>
             <Text></Text>
 
             <Button
@@ -83,7 +77,6 @@ class Buttons extends Component {
             />
 
             <Text></Text>
-            <Text></Text>
 
             <Button
             large
@@ -92,6 +85,7 @@ class Buttons extends Component {
             backgroundColor="purple"
             />
 
+            <Text></Text>
             <Text></Text>
             <Text></Text>
 
@@ -109,13 +103,11 @@ class Buttons extends Component {
       backgroundColor: 'white',
       paddingVertical: 30,
     },
-    header: {
-      flex: 1,
-      paddingVertical: 30,
-      paddingHorizontal: 20,
+    buttonSpacing: {
+      paddingVertical: 100,
     },
     title: {
-      fontSize: 24,
+      fontSize: 20,
       fontWeight: '500',
       marginBottom: 4,
       borderBottomWidth: StyleSheet.hairlineWidth,

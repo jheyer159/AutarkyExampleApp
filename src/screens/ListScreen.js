@@ -36,7 +36,9 @@ export default class ListScreen extends React.Component {
   render() {
     return (
         <ScrollView style={styles.container}>
+          <Text style={styles.title}>Portrait List</Text>
           <ListTwo />
+          <Text style={styles.title}>Checked List</Text>
           <ListOne />
         </ScrollView>
     );
@@ -50,5 +52,17 @@ const styles = StyleSheet.create({
   },
   navIcons: {
     fontSize: 24
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: '500',
+    marginBottom: 4,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: 'black',
+    textAlign: 'center',
+    paddingVertical: 10,
+    borderColor: '#bbb',
+    padding: 10,
+    backgroundColor: '#eee'
   }
 });
