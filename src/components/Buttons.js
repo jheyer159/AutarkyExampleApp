@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'react-native-elements';
-import { SocialIcon } from 'react-native-elements';
 
 import { 
     ScrollView,
@@ -12,6 +10,10 @@ import {
     Image,
     Styles,
   } from 'react-native';
+
+import { Button } from 'react-native-elements';
+import { SocialIcon } from 'react-native-elements';
+import { PricingCard } from 'react-native-elements';
 
 
 
@@ -42,6 +44,7 @@ class Buttons extends Component {
             light
             type='instagram'
             title="Instagram"
+            touchableOpacity="true"
             />
 
             <Text></Text>
@@ -87,6 +90,21 @@ class Buttons extends Component {
 
             <Text></Text>
             <Text></Text>
+
+            <Text style={styles.title}>Pricing Buttons</Text>
+
+            <Text></Text>
+
+            <PricingCard
+            color='#4f9deb'
+            title='Free'
+            price='$0'
+            info={['1 User', 'Basic Support', 'All Core Features']}
+            button={{ title: 'GET STARTED', icon: 'flight-takeoff' }}
+            />
+
+
+            <Text></Text>
             <Text></Text>
 
           </ScrollView>
@@ -101,7 +119,6 @@ class Buttons extends Component {
     container: {
       flex: 1,
       backgroundColor: 'white',
-      paddingVertical: 30,
     },
     buttonSpacing: {
       paddingVertical: 100,
@@ -113,7 +130,6 @@ class Buttons extends Component {
       borderBottomWidth: StyleSheet.hairlineWidth,
       borderBottomColor: 'black',
       textAlign: 'center',
-      paddingVertical: 10,
       borderColor: '#bbb',
       padding: 10,
       backgroundColor: '#eee'

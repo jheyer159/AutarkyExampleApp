@@ -39,7 +39,6 @@ export default class HomeScreen extends React.Component {
   render() {
     return (
       <View>
-        <Image source={require('../img/autarky.png')}/>
             <AutarkyText />
       </View> 
     );
