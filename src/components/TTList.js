@@ -40,7 +40,6 @@ const list = [
       {
         name: 'Chris Jackson',
         avatar_url: 'https://s3.amazonaws.com/uifaces/faces/twitter/adhamdannaway/128.jpg',
-        subtitle: 'Vice Chairman'
       },
 ];
 
