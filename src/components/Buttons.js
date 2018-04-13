@@ -49,7 +49,6 @@ class Buttons extends Component {
 
             <Text></Text>
             <Text></Text>
-            <Text></Text>
 
             <Text style={styles.title}>Square Buttons</Text>
 
