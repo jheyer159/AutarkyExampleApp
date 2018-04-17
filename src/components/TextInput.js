@@ -4,6 +4,9 @@ import { TextInput, View} from 'react-native';
 /**
  * to be wrapped with redux-form Field component
  */
+
+// WHAT IS THIS?
+
 export default function RTextInput(props) {
   const {input, meta, ...inputProps } = props;
 
