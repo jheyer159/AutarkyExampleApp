@@ -22,5 +22,3 @@ export default function RTextInput(props) {
     </View>
   );
 }
-
-//Bring in styles from inputfield
